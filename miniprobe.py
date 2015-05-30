@@ -40,7 +40,6 @@ try:
     import sensors
 except Exception as e:
     print e
-    #sys.exit()
 
 
 class MiniProbe(object):
@@ -114,17 +113,21 @@ class MiniProbe(object):
         else:
             return {'gid': config['gid'], 'key': self.hash_access_key(config['key']), 'protocol': config['protocol']}
 
-    def create_url(self, config, i=None):
+    def create_url(self, config, i=None, http=False):
         """
         creating the actual URL
         """
+        prefix = "https"
+        if http:
+            prefix = "http"
+
         if not (i is None) and (i != "data"):
-            return "https://%s:%s/probe/%s" % (
-                config['server'], config['port'], i)
+            return "%s://%s:%s/probe/%s" % (
+                prefix, config['server'], config['port'], i)
         elif i == "data":
-            return "https://%s:%s/probe/%s?gid=%s&protocol=%s&key=%s" % (config['server'], config['port'], i,
-                                                                         config['gid'], config['protocol'],
-                                                                         self.hash_access_key(config['key']))
+            return "%s://%s:%s/probe/%s?gid=%s&protocol=%s&key=%s" % (prefix, config['server'], config['port'], i,
+                                                                      config['gid'], config['protocol'],
+                                                                      self.hash_access_key(config['key']))
             pass
         else:
             return "No method given"

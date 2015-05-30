@@ -78,6 +78,8 @@ This will enable detailed logging to folder "logs" which is as sub folder of the
 
 Changelog
 =========
+
+=======
 07-05-2015
 ----------
 - Finished the DNS Sensor for all dns types currently available in a Windows Probe
@@ -88,6 +90,10 @@ Changelog
 - Added dns sensor with support for A MX and SOA Records
 - Set the log message "Running Sensor: ..." to a debug message
 - Added the dnspython module for the dns sensor
+
+10-03-2015
+----------
+- Added support for internal QA
 
 24-02-2015
 ----------
