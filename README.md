@@ -1,4 +1,4 @@
-![Travis-CI Build State](https://travis-ci.org/eagle00789/PythonMiniProbe.svg?branch=master)
+[![Build Status](https://travis-ci.org/eagle00789/PythonMiniProbe.svg?branch=master)](https://travis-ci.org/eagle00789/PythonMiniProbe)
 
 PythonMiniProbe
 ===============
