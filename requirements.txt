@@ -1,1 +1,4 @@
-
+pyasn1>=0.1.7
+pysnmp>=4.2.5
+requests==2.5.3
+dnspython>=1.12.0
