@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 from nose.tools import *
-import sensors.nmap
+from sensors import nmap
 
 def test_nmap_get_kind():
     test_nmap = nmap.NMAP()
