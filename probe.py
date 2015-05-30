@@ -51,7 +51,6 @@ http = False
 if sys.argv[1:] and sys.argv[1] == "http":
     http = True
 
-
 def main():
         """
         Main routine for MiniProbe (Python)
