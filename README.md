@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/eagle00789/PythonMiniProbe.svg?branch=master)](https://travis-ci.org/eagle00789/PythonMiniProbe)
+[![Build Status](https://travis-ci.org/eagle00789/PythonMiniProbe.svg?branch=master)](https://travis-ci.org/eagle00789/PythonMiniProbe) [![Coverage Status](https://coveralls.io/repos/eagle00789/PythonMiniProbe/badge.svg)](https://coveralls.io/r/eagle00789/PythonMiniProbe)
 
 PythonMiniProbe
 ===============
