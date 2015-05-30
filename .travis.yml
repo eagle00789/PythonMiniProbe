@@ -7,4 +7,5 @@ install:
 script: 
   - touch sensors/__init__.py
   - nosetests -v
-
+after_success:
+  - coveralls
