@@ -1,6 +1,9 @@
 language: python
 python:
+<<<<<<< HEAD
   - "2.6"
+=======
+>>>>>>> refs/remotes/PaesslerAG/master
   - "2.7"
   - "3.2"
   - "3.3"
@@ -20,5 +23,8 @@ install:
   - pip install --upgrade pip
   - pip install -r requirements.txt
 script: 
+<<<<<<< HEAD
   - touch sensors/__init__.py
+=======
+>>>>>>> refs/remotes/PaesslerAG/master
   - nosetests -v
